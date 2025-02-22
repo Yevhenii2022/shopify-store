@@ -1171,6 +1171,11 @@
       margin-inline: auto;
     }
   }
+  .md\:my-16 {
+    @media (width >= 48rem) {
+      margin-block: calc(var(--spacing) * 16);
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
