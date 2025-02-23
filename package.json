@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/Yevhenii2022/shopify-store#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.6",
-    "tailwindcss": "^4.0.6"
+    "@tailwindcss/cli": "^4.0.8",
+    "tailwindcss": "^4.0.8"
   }
 }
