@@ -267,6 +267,9 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .bottom-20 {
+    bottom: calc(var(--spacing) * 20);
+  }
   .z-10 {
     z-index: 10;
   }
