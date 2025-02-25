@@ -1,6 +1,6 @@
 <div class="relative bg-white" x-data="{ mobileMenuOpen: false, searchBarOpen: false }" x-cloak>
     <div class="mx-auto px-4 sm:px-6">
-        <div class="flex justify-center items-center py-6 md:justify-start md:space-x-10">
+        <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
             <!-- STORE NAME / STORE LOGO -->
             <div class="flex justify-start lg:flex-1 truncate">
                 <h1 class="text-xl font-bold truncate">{{ shop.name }}</h1>
@@ -12,7 +12,7 @@
                 </button>
             </div>
             <!-- NAVIGATION MENU -->
-            <nav class="hidden md:flex space-x-10">
+            <nav class="hidden md:flex space-x-10 gap-8">
                 {% if section.settings.menu.links == blank %}
                     {% assign main_menu_linklist = linklists[section.settings.menu].links %}
                 {% else %}
@@ -56,7 +56,7 @@
                 {% endfor %}
             </nav>
             <!-- CART BUTTON / ACCOUNT LINKS IF ENABLED -->
-            <div class="hidden md:flex items-center justify-end md:flex-1 space-x-5">
+            <div class="hidden md:flex items-center justify-end md:flex-1 space-x-5 gap-4">
                 <button x-on:click="searchBarOpen = true" type="button" class="whitespace-nowrap text-base text-gray-500 hover:text-gray-900">
                     {% render 'icon-search' %}
                 </button>
